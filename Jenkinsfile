@@ -5,6 +5,10 @@ pipeline {
         TF_IN_AUTOMATION = "true"
     }
 
+    tools {
+        terraform "terraform-latest"
+    }
+
     stages {
         stage("Version") {
             steps {
@@ -18,4 +22,4 @@ pipeline {
             }
         }
     }
-}   
+}
