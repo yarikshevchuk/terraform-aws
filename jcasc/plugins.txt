@@ -20,3 +20,4 @@ pipeline-stage-view:latest
 workflow-aggregator:latest
 ssh-slaves:latest
 blueocean:latest
+terraform:latest
