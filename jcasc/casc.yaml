@@ -6,7 +6,7 @@ tool:
           - installSource:  
               installers:
                 - terraformInstaller:
-                    id: "latest-linux-amd64"
+                    id: "1.5.7-linux-amd64"
 jenkins:
   securityRealm:
     local:
