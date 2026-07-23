@@ -10,16 +10,23 @@ pipeline {
     }
 
     stages {
-        stage("Version") {
+        stage("Tool validation") {
             steps {
-                sh "terraform version"
+                dir("terraform/aws") {
+                    sh "pwd"
+                    sh "terraform version"
+                }
             }
         }
 
-        stage("Init") {
+        stage("AWS Network") {
             steps {
-                sh "terraform init -input=false"
+                dir("terraform/aws/modules/network") {
+                    sh "pwd"
+                    sh "terraform init"
+                }
             }
         }
+        
     }
 }
