@@ -1,2 +1,8 @@
 .~lock.jenkins-homework.odt#
 jenkins-homework.odt
+**/.terraform/*
+**/*.tfstate
+**/*.tfstate.*
+**/.terraform.lock.hcl
+**/crash.log
+**/terraform.tfvars
